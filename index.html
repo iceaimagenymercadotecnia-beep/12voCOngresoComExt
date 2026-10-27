@@ -131,48 +131,30 @@ header nav button:hover{transform:translateY(-2px)}
 .day-grid .day.red{background:linear-gradient(125deg,#b70d2e,#7b0b28)!important}
 .day-grid .day.blue{background:linear-gradient(125deg,#08243e,#15546a)!important}
 @media(max-width:760px){.mesa-body{padding:17px!important}.mesa-venue strong{font-size:16px}.mesa-details{padding:10px!important}.paper{padding:14px!important}}
-</style><style id="editorial-port-design">
-/* Editorial maritime redesign: visual scenes, no recycled event banners or stripes */
-.activity-grid{gap:22px!important;align-items:start!important}
-.activity-card{border-radius:15px!important;overflow:hidden!important;background:#fff!important;box-shadow:0 10px 28px rgba(7,31,53,.09)!important;border:1px solid #dce5e8!important}
-.activity-card .activity-accent{height:116px!important;background: url('assets/visual-contenedores.svg') center/cover no-repeat!important}
+</style><style id="photographic-restoration">
+/* Regreso a la fotografía original, sin ilustraciones geométricas */
+.activity-grid{align-items:start!important;gap:20px!important}
+.activity-card{align-self:start!important;overflow:hidden!important;border:1px solid #dbe3e8!important;border-radius:13px!important;background:#fff!important;box-shadow:0 9px 24px rgba(9,33,50,.075)!important}
+.activity-card .activity-accent{height:85px!important;background-image:linear-gradient(90deg,rgba(4,25,42,.28),rgba(4,25,42,.04)),url('assets/puerto.jpg')!important;background-size:cover!important;background-position:30% 44%!important}
 .activity-card .activity-accent:after{display:none!important}
-.activity-card.talk .activity-accent,.activity-card.talk:nth-child(3n+2) .activity-accent,.activity-card.talk:nth-child(3n) .activity-accent{background:url('assets/visual-buque.svg') center/cover no-repeat!important}
-.activity-card.talk:nth-child(2n) .activity-accent{background:url('assets/visual-grua.svg') center/cover no-repeat!important}
-.activity-card.research .activity-accent{background:url('assets/visual-investigacion.svg') center/cover no-repeat!important}
-.activity-card.culture .activity-accent{background:url('assets/visual-cultura.svg') center/cover no-repeat!important}
-.activity-card.official .activity-accent{background:url('assets/visual-china.svg') center/cover no-repeat!important}
-.activity-card.pause .activity-accent{height:12px!important;background:#dce6e9!important}
-.activity-card.general .activity-accent{background:url('assets/visual-aduana.svg') center/cover no-repeat!important}
-.activity-card:has(h3) .activity-content{min-height:0!important;padding:20px 21px 22px!important}
-.activity-card h3{margin:15px 0 22px!important;font-size:clamp(18px,1.5vw,22px)!important;line-height:1.29!important}
+.activity-card.talk .activity-accent{background-position:9% 42%!important}
+.activity-card.talk:nth-child(even) .activity-accent{background-position:75% 50%!important}
+.activity-card.official .activity-accent{background-position:96% 43%!important}
+.activity-card.research .activity-accent{background-image:linear-gradient(90deg,rgba(125,78,12,.42),rgba(5,33,52,.10)),url('assets/puerto.jpg')!important;background-position:45% 66%!important}
+.activity-card.culture .activity-accent{background-position:100% 30%!important}
+.activity-card.pause .activity-accent{height:7px!important;background:#e6b94f!important}
+.activity-card.general .activity-accent{height:9px!important;background:#0c3950!important}
+.activity-card .activity-content{min-height:0!important;padding:19px 20px 21px!important}
+.activity-card h3{margin:15px 0 20px!important;font-size:clamp(17px,1.35vw,20px)!important;line-height:1.34!important}
 .activity-card .detail-toggle{margin-top:0!important}
-.terminal-strip{background:linear-gradient(90deg,#08253edc,#08253e24),url('assets/visual-buque.svg') center/cover!important;border:0!important;border-radius:16px!important}
-.terminal-strip.second{background:linear-gradient(90deg,#08253eea,#08253e1a),url('assets/visual-aduana.svg') center/cover!important;border:0!important}
-.activity-card .card-detail{background:#fff!important}
-@media(max-width:740px){.activity-card .activity-accent{height:92px!important}.activity-grid{gap:16px!important}}
-</style><style id="mesas-editorial-final">
-/* Mesas: photographic editorial hero, no faux banners or repetitive art */
-#mesas .research-hero{position:relative;isolation:isolate;overflow:hidden;min-height:310px;background:#08263d!important;border-radius:20px!important;padding:38px 44px!important;box-shadow:0 18px 42px #071f3520}
-#mesas .research-hero:before{content:"";position:absolute;z-index:-2;inset:0 0 0 42%;background:url('assets/puerto.jpg') 52% 52%/cover no-repeat;filter:saturate(.95)}
-#mesas .research-hero:after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,#08263d 0%,#08263d 38%,#08263de0 57%,#08263d15 100%)}
-#mesas .research-hero h3{font-size:clamp(29px,3vw,46px)!important;line-height:1.13!important;margin:14px 0!important;letter-spacing:-.035em;max-width:520px}
-#mesas .research-hero p{font-size:15px;max-width:460px}
-#mesas .research-kicker{color:#f4c45f!important;letter-spacing:.13em}
-#mesas .research-stat{background:#ffffffeb;color:#08263d;border:0;border-radius:14px;padding:20px 24px;min-width:135px;box-shadow:0 8px 22px #061e3340}
-#mesas .research-stat strong{font-size:68px!important}
-#mesas .research-stat span{color:#a90e2b!important}
-#mesas .mesa-card{border-radius:17px!important;background:#fff!important}
-#mesas .mesa-top,#mesas .mesa-card:nth-child(3n+2) .mesa-top,#mesas .mesa-card:nth-child(3n) .mesa-top{position:relative;overflow:hidden;background:#0a2b44!important;min-height:128px!important;padding:22px 23px!important;display:flex;flex-direction:column;justify-content:center;gap:8px!important;border-bottom:5px solid #e9b850}
-#mesas .mesa-card:nth-child(3n+2) .mesa-top{background:#103e54!important;border-bottom-color:#c41a39}
-#mesas .mesa-card:nth-child(3n) .mesa-top{background:#11354a!important;border-bottom-color:#e9b850}
-#mesas .mesa-top:before{content:"";position:absolute;right:-12px;top:-26px;width:145px;height:135px;border:3px solid #ffffff20;border-radius:22px;transform:rotate(-13deg)}
-#mesas .mesa-top:after{content:"";position:absolute;right:19px;bottom:13px;width:68px;height:24px;border:2px solid #e9b85080;border-radius:3px;background:repeating-linear-gradient(90deg,transparent 0 11px,#e9b85050 12px 13px);opacity:.65}
-#mesas .mesa-top .mesa-num{font-size:37px!important;line-height:1!important;letter-spacing:-.035em;position:relative;z-index:1}
-#mesas .mesa-top>div:last-child{font-size:13px;font-weight:700;letter-spacing:.025em;position:relative;z-index:1}
-#mesas .mesa-body{padding:20px 22px!important}
-#mesas .mesa-venue{background:#f2f6f7!important;border-left-color:#c31939!important}
-@media(max-width:740px){#mesas .research-hero{padding:27px!important;min-height:270px}#mesas .research-hero:before{inset:0 0 0 28%;opacity:.65}#mesas .research-hero:after{background:linear-gradient(90deg,#08263dfc,#08263dd9 72%,#08263d80)}#mesas .research-hero h3{font-size:30px!important}#mesas .mesa-top{min-height:110px!important}}
+.terminal-strip,.terminal-strip.second{background-image:linear-gradient(90deg,rgba(5,26,44,.94) 0%,rgba(5,26,44,.48) 60%,rgba(5,26,44,.12)),url('assets/puerto.jpg')!important;background-size:cover!important;border:0!important;border-radius:15px!important}
+.terminal-strip{background-position:center 43%!important}
+.terminal-strip.second{background-position:right 55%!important}
+.research-hero{background-image:linear-gradient(90deg,rgba(6,28,46,.95),rgba(7,35,54,.62)),url('assets/puerto.jpg')!important;background-size:cover!important;background-position:center!important}
+.mesa-top{background:linear-gradient(110deg,#09273d,#14516a)!important}
+.mesa-card:nth-child(3n+2) .mesa-top{background:linear-gradient(110deg,#9c1732,#bc3c4c)!important}
+.mesa-card:nth-child(3n) .mesa-top{background:linear-gradient(110deg,#7b581d,#b38a3e)!important}
+@media(max-width:740px){.activity-card .activity-accent{height:70px!important}}
 </style></head><body><header><div class="institutional-logos"><img alt="Identificador institucional UAEH e ICEA" class="icea-logo" src="assets/logo-uaeh-icea.png"/><img alt="Logotipo oficial del 12.º Congreso Nacional y 7.º Internacional" class="congress-logo" src="assets/logo-12cn-7iece.png"/></div><nav aria-label="Navegación principal"><button class="active" data-view="inicio">INICIO</button><button data-view="mesas">PONENCIAS ESTUDIANTILES</button><button data-view="programa">PROGRAMA GENERAL</button></nav></header><main><section class="view active" id="inicio"><div class="hero"><div class="hero-inner"><div class="eyebrow">12.º Congreso Nacional  |  7.º Internacional  |  2026</div><h1>El comercio y el nuevo orden internacional</h1><p>4 y 5 de noviembre de 2026  ·  China, país invitado</p><p class="hero-feature">48 ponencias estudiantiles · 9 mesas de trabajo · Participación internacional</p><div class="home-actions"><button class="home-main" data-view="mesas">EXPLORAR PONENCIAS</button><button class="home-secondary" data-view="programa">CONSULTAR PROGRAMA</button></div></div></div></section><section class="view" id="programa"><div class="wrap"><div class="pagehead"><div><div class="eyebrow" style="color:var(--red)">Terminal académica · 2026</div><h2>Programa general</h2><p class="muted">Dos jornadas de intercambio académico. Elige tu día para descubrir las actividades.</p></div></div><div class="day-grid"><button class="day red" data-view="dia1"><small>MIÉRCOLES · 4 NOVIEMBRE 2026</small><strong>DÍA 1</strong><span class="link">CONSULTAR JORNADA →</span></button><button class="day blue" data-view="dia2"><small>JUEVES · 5 NOVIEMBRE 2026</small><strong>DÍA 2</strong><span class="link">CONSULTAR JORNADA →</span></button></div><div class="notice">Las actividades simultáneas conservan los horarios establecidos en el programa oficial.</div></div></section><section class="view" id="dia1"><div class="wrap"><button class="back" data-view="programa">← Volver a jornadas</button><div class="pagehead"><div><div class="eyebrow" style="color:var(--red)">Miércoles · 4 de noviembre de 2026</div><h2>Jornada 01</h2><p class="muted">Selecciona una actividad para consultar ponentes y responsables.</p></div></div><div class="terminal-strip"><span>TERMINAL 01 / MÉXICO–CHINA</span><strong>Miércoles 4 de noviembre</strong></div><div class="activity-grid" id="events1"></div></div></section><section class="view" id="dia2"><div class="wrap"><button class="back" data-view="programa">← Volver a jornadas</button><div class="pagehead"><div><div class="eyebrow" style="color:var(--red)">Jueves · 5 de noviembre de 2026</div><h2>Jornada 02</h2><p class="muted">Selecciona una actividad para consultar sus detalles.</p></div></div><div class="terminal-strip second"><span>TERMINAL 02 / MÉXICO–CHINA</span><strong>Jueves 5 de noviembre</strong></div><div class="activity-grid" id="events2"></div></div></section><section class="view" id="mesas"><div class="wrap"><div class="eyebrow">EL CONGRESO ES DE SUS ESTUDIANTES</div><h2 class="student-heading">Investigación estudiantil en primer plano</h2><p class="student-intro">Explora las ponencias por jornada y por mesa. Cada trabajo muestra su horario, título y autoría.</p><div class="research-hero"><div><span class="research-kicker">ZONA DE INVESTIGACIÓN · 2026</span><h3>48 trabajos.<br/>9 mesas.<br/>Una comunidad que investiga.</h3><p>Comercio internacional, logística, tecnología, sostenibilidad y nuevas oportunidades.</p></div><div class="research-stat"><strong>48</strong><span>PONENCIAS</span></div></div><div class="student-days"><button class="student-day selected" data-student-day="4">MIÉRCOLES 4 DE NOVIEMBRE</button><button class="student-day" data-student-day="5">JUEVES 5 DE NOVIEMBRE</button></div><div id="student-mesas"></div></div></section></main><footer>12CN | 7IECE · 2026 · Comercio exterior · México–China</footer><script>
 const days=[[
 ['07:30','08:30','REGISTRO','Acreditación y registro','Lugar: Planta baja, edificio D, ICEA.'],
