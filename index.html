@@ -155,6 +155,42 @@ header nav button:hover{transform:translateY(-2px)}
 .mesa-card:nth-child(3n+2) .mesa-top{background:linear-gradient(110deg,#9c1732,#bc3c4c)!important}
 .mesa-card:nth-child(3n) .mesa-top{background:linear-gradient(110deg,#7b581d,#b38a3e)!important}
 @media(max-width:740px){.activity-card .activity-accent{height:70px!important}}
+</style><style id="photo-consistency-final">
+/* All activities use genuine photographic backgrounds, including breaks and ceremonies. */
+.activity-card .activity-accent,
+.activity-card.talk .activity-accent,
+.activity-card.research .activity-accent,
+.activity-card.culture .activity-accent,
+.activity-card.pause .activity-accent,
+.activity-card.general .activity-accent,
+.activity-card.official .activity-accent {
+ height:92px!important;
+ background-image:linear-gradient(90deg,rgba(5,25,44,.36),rgba(5,25,44,.06)),url('assets/puerto.jpg')!important;
+ background-size:cover!important;
+ background-repeat:no-repeat!important;
+ background-color:#0b354d!important;
+ border:0!important;
+}
+.activity-card .activity-accent::after{display:none!important}
+.activity-grid .activity-card:nth-child(6n+1) .activity-accent{background-position:10% 32%!important}
+.activity-grid .activity-card:nth-child(6n+2) .activity-accent{background-position:43% 64%!important}
+.activity-grid .activity-card:nth-child(6n+3) .activity-accent{background-position:96% 27%!important}
+.activity-grid .activity-card:nth-child(6n+4) .activity-accent{background-position:15% 78%!important}
+.activity-grid .activity-card:nth-child(6n+5) .activity-accent{background-position:70% 52%!important}
+.activity-grid .activity-card:nth-child(6n) .activity-accent{background-position:85% 80%!important}
+.activity-card{align-self:start!important;min-height:0!important}
+.activity-card .activity-content{padding:19px 20px 22px!important}
+.activity-card h3{margin:16px 0 20px!important}
+.activity-card.pause .activity-content{min-height:0!important}
+/* Student sessions: real photo rather than decorative flat panels. */
+.mesa-card .mesa-top,.mesa-card:nth-child(2n) .mesa-top,.mesa-card:nth-child(3n) .mesa-top,
+.mesa-card:nth-child(3n+2) .mesa-top{
+ background-image:linear-gradient(100deg,rgba(6,29,47,.94),rgba(6,29,47,.50)),url('assets/puerto.jpg')!important;
+ background-size:cover!important;background-position:center 55%!important;
+}
+.mesa-card:nth-child(3n+2) .mesa-top{background-position:90% 42%!important}
+.mesa-card:nth-child(3n) .mesa-top{background-position:20% 76%!important}
+@media(max-width:740px){.activity-card .activity-accent{height:82px!important}}
 </style></head><body><header><div class="institutional-logos"><img alt="Identificador institucional UAEH e ICEA" class="icea-logo" src="assets/logo-uaeh-icea.png"/><img alt="Logotipo oficial del 12.º Congreso Nacional y 7.º Internacional" class="congress-logo" src="assets/logo-12cn-7iece.png"/></div><nav aria-label="Navegación principal"><button class="active" data-view="inicio">INICIO</button><button data-view="mesas">PONENCIAS ESTUDIANTILES</button><button data-view="programa">PROGRAMA GENERAL</button></nav></header><main><section class="view active" id="inicio"><div class="hero"><div class="hero-inner"><div class="eyebrow">12.º Congreso Nacional  |  7.º Internacional  |  2026</div><h1>El comercio y el nuevo orden internacional</h1><p>4 y 5 de noviembre de 2026  ·  China, país invitado</p><p class="hero-feature">48 ponencias estudiantiles · 9 mesas de trabajo · Participación internacional</p><div class="home-actions"><button class="home-main" data-view="mesas">EXPLORAR PONENCIAS</button><button class="home-secondary" data-view="programa">CONSULTAR PROGRAMA</button></div></div></div></section><section class="view" id="programa"><div class="wrap"><div class="pagehead"><div><div class="eyebrow" style="color:var(--red)">Terminal académica · 2026</div><h2>Programa general</h2><p class="muted">Dos jornadas de intercambio académico. Elige tu día para descubrir las actividades.</p></div></div><div class="day-grid"><button class="day red" data-view="dia1"><small>MIÉRCOLES · 4 NOVIEMBRE 2026</small><strong>DÍA 1</strong><span class="link">CONSULTAR JORNADA →</span></button><button class="day blue" data-view="dia2"><small>JUEVES · 5 NOVIEMBRE 2026</small><strong>DÍA 2</strong><span class="link">CONSULTAR JORNADA →</span></button></div><div class="notice">Las actividades simultáneas conservan los horarios establecidos en el programa oficial.</div></div></section><section class="view" id="dia1"><div class="wrap"><button class="back" data-view="programa">← Volver a jornadas</button><div class="pagehead"><div><div class="eyebrow" style="color:var(--red)">Miércoles · 4 de noviembre de 2026</div><h2>Jornada 01</h2><p class="muted">Selecciona una actividad para consultar ponentes y responsables.</p></div></div><div class="terminal-strip"><span>TERMINAL 01 / MÉXICO–CHINA</span><strong>Miércoles 4 de noviembre</strong></div><div class="activity-grid" id="events1"></div></div></section><section class="view" id="dia2"><div class="wrap"><button class="back" data-view="programa">← Volver a jornadas</button><div class="pagehead"><div><div class="eyebrow" style="color:var(--red)">Jueves · 5 de noviembre de 2026</div><h2>Jornada 02</h2><p class="muted">Selecciona una actividad para consultar sus detalles.</p></div></div><div class="terminal-strip second"><span>TERMINAL 02 / MÉXICO–CHINA</span><strong>Jueves 5 de noviembre</strong></div><div class="activity-grid" id="events2"></div></div></section><section class="view" id="mesas"><div class="wrap"><div class="eyebrow">EL CONGRESO ES DE SUS ESTUDIANTES</div><h2 class="student-heading">Investigación estudiantil en primer plano</h2><p class="student-intro">Explora las ponencias por jornada y por mesa. Cada trabajo muestra su horario, título y autoría.</p><div class="research-hero"><div><span class="research-kicker">ZONA DE INVESTIGACIÓN · 2026</span><h3>48 trabajos.<br/>9 mesas.<br/>Una comunidad que investiga.</h3><p>Comercio internacional, logística, tecnología, sostenibilidad y nuevas oportunidades.</p></div><div class="research-stat"><strong>48</strong><span>PONENCIAS</span></div></div><div class="student-days"><button class="student-day selected" data-student-day="4">MIÉRCOLES 4 DE NOVIEMBRE</button><button class="student-day" data-student-day="5">JUEVES 5 DE NOVIEMBRE</button></div><div id="student-mesas"></div></div></section></main><footer>12CN | 7IECE · 2026 · Comercio exterior · México–China</footer><script>
 const days=[[
 ['07:30','08:30','REGISTRO','Acreditación y registro','Lugar: Planta baja, edificio D, ICEA.'],
