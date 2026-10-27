@@ -13,7 +13,7 @@ header .institutional-logos .congress-logo{height:124px}
 #programa .day-grid{gap:26px}
 #programa .day{min-height:420px;padding:38px;border-radius:16px;isolation:isolate;background-position:center;background-size:cover;transition:transform .2s,box-shadow .2s}
 #programa .day.red{background-image:linear-gradient(0deg,rgba(71,6,22,.93),rgba(142,13,34,.32)),url('assets/puerto.jpg')}
-#programa .day.blue{background-image:linear-gradient(0deg,rgba(3,28,51,.95),rgba(5,53,79,.25)),url('assets/lona-12cn.jpg')}
+#programa .day.blue{background-image:linear-gradient(0deg,rgba(3,28,51,.95),rgba(5,53,79,.25)),url('assets/puerto.jpg')}
 #programa .day:after{border:0;border-radius:0;content:'01';width:auto;height:auto;right:25px;top:15px;font-size:110px;font-weight:900;color:#ffffff22}
 #programa .day.blue:after{content:'02'}
 #programa .day strong{font-size:clamp(68px,7vw,112px);text-shadow:0 3px 14px #0006}
@@ -22,16 +22,16 @@ header .institutional-logos .congress-logo{height:124px}
 #programa .day:hover{transform:translateY(-7px);box-shadow:0 24px 45px #071f3533}
 #dia1,#dia2{background:#f2f5f6}
 .terminal-strip{border-radius:14px;min-height:165px;margin:0 0 25px;padding:30px 35px;background:linear-gradient(90deg,#061f36ed,#0a314c90),url('assets/puerto.jpg') center 46%/cover;color:white;display:flex;flex-direction:column;justify-content:center;gap:13px}
-.terminal-strip.second{background:linear-gradient(90deg,#7d0925e8,#7d092555),url('assets/lona-12cn.jpg') center/cover}
+.terminal-strip.second{background:linear-gradient(90deg,#7d0925e8,#7d092555),url('assets/puerto.jpg') center/cover}
 .terminal-strip span{font-size:12px;letter-spacing:.24em;color:#f1c35f;font-weight:900}
 .terminal-strip strong{font-size:clamp(25px,3vw,42px)}
 .activity-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
 .activity-card{background:#fff;border:1px solid #dce4e7;border-radius:14px;overflow:hidden;box-shadow:0 8px 24px #09283c0b;display:flex;min-height:230px;flex-direction:column;transition:transform .18s,box-shadow .18s}
 .activity-card:hover{transform:translateY(-3px);box-shadow:0 15px 30px #09283c19}
 .activity-accent{height:56px;background:linear-gradient(100deg,#0a324fdd,#0b334d55),url('assets/puerto.jpg') center/cover}
-.activity-card.talk .activity-accent{background:linear-gradient(100deg,#9c102bd9,#80102455),url('assets/lona-12cn.jpg') center/cover}
+.activity-card.talk .activity-accent{background:linear-gradient(100deg,#9c102bd9,#80102455),url('assets/puerto.jpg') center/cover}
 .activity-card.research .activity-accent{background:repeating-linear-gradient(90deg,#b68426 0 22px,#cb9b38 22px 26px,#a47621 26px 52px)}
-.activity-card.culture .activity-accent{background:linear-gradient(100deg,#7d0925dd,#7d092555),url('assets/lona-12cn.jpg') center/cover}
+.activity-card.culture .activity-accent{background:linear-gradient(100deg,#7d0925dd,#7d092555),url('assets/puerto.jpg') center/cover}
 .activity-card.pause .activity-accent{background:linear-gradient(110deg,#d7dce0,#eef0f2)}
 .activity-content{padding:22px 23px 24px;flex:1;display:flex;flex-direction:column}
 .activity-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
@@ -43,7 +43,25 @@ header .institutional-logos .congress-logo{height:124px}
 .card-detail{margin-top:14px;padding-top:14px;border-top:1px solid #e3e9ec;color:#42586a;font-size:14px;line-height:1.55}
 @media(max-width:1050px){.activity-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:740px){header .institutional-logos .icea-logo{height:76px;max-width:94vw}header .institutional-logos .congress-logo{height:92px}#programa .day{min-height:320px}.activity-grid{grid-template-columns:1fr}.activity-card{min-height:190px}.terminal-strip{min-height:130px;padding:22px}}
-.venue-line{margin-top:12px;padding-top:10px;border-top:1px solid #d8e0e6;color:#10283c}.blank-place{display:inline-block;min-width:135px;min-height:15px;border-bottom:1px solid #d1d9de;vertical-align:middle}.mesa-location{margin-top:10px}</style><style>
+.venue-line{margin-top:12px;padding-top:10px;border-top:1px solid #d8e0e6;color:#10283c}.blank-place{display:inline-block;min-width:135px;min-height:15px;border-bottom:1px solid #d1d9de;vertical-align:middle}.mesa-location{margin-top:10px}
+/* Rediseño de identidad visual de las jornadas: sin lona ni logotipos de fondo */
+.terminal-strip{position:relative;isolation:isolate;min-height:185px;background:linear-gradient(90deg,rgba(3,24,43,.95) 0%,rgba(5,39,62,.76) 48%,rgba(7,44,61,.18) 100%),url('assets/puerto.jpg') center 56%/cover!important;border-left:7px solid #e7b548;box-shadow:0 16px 32px #08233c22}
+.terminal-strip.second{background:linear-gradient(90deg,rgba(7,29,48,.96) 0%,rgba(11,51,67,.78) 48%,rgba(110,19,36,.24) 100%),url('assets/puerto.jpg') right 28%/cover!important;border-left-color:#bd1638}
+.terminal-strip span,.terminal-strip strong{position:relative;z-index:1;text-shadow:0 2px 10px #03162566}
+.activity-card{border:1px solid #d5e0e6;box-shadow:0 7px 22px #07243a0c}
+.activity-card .activity-accent{height:66px!important;background-image:none!important;position:relative;overflow:hidden}
+.activity-card .activity-accent:after{content:'';position:absolute;inset:0;opacity:.65;background:repeating-linear-gradient(90deg,transparent 0 35px,rgba(255,255,255,.13) 36px 38px,transparent 39px 74px)}
+.activity-card.talk .activity-accent{background:linear-gradient(100deg,#092c48aa,#0d34494a),url('assets/puerto.jpg') center 35%/cover!important}
+.activity-card.talk:nth-child(3n+2) .activity-accent{background-position:center 70%!important}
+.activity-card.talk:nth-child(3n) .activity-accent{background-position:right 25%!important}
+.activity-card.research .activity-accent{background:linear-gradient(105deg,#a4771e,#d8a23e 45%,#765015)!important}
+.activity-card.research .activity-accent:after{background:repeating-linear-gradient(90deg,transparent 0 53px,#f6d17b5c 54px 58px,transparent 59px 108px)}
+.activity-card.culture .activity-accent{background:linear-gradient(100deg,#8c1431,#ca3149 50%,#70263a)!important}
+.activity-card.official .activity-accent,.activity-card.general .activity-accent{background:linear-gradient(105deg,#0d3955,#18617a)!important}
+.activity-card.pause .activity-accent{background:linear-gradient(110deg,#dbe8ed,#c4d5dd)!important}
+.activity-card .activity-content{background:#fff}
+.activity-card h3{line-height:1.32}
+</style><style>
 nav button{font-size:15px;padding:17px 24px}nav button[data-view="mesas"]{background:#b60d25;color:#fff}nav button[data-view="mesas"].active{background:#071f35}
 .hero-feature{color:#ffe0a0!important;font-weight:800;font-size:17px!important;margin-bottom:0}
 .student-heading{font-size:clamp(38px,5vw,68px);letter-spacing:-.05em;margin:10px 0 14px;line-height:1.08}.student-intro{font-size:19px;line-height:1.6;max-width:800px;color:#536779}
