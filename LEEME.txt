@@ -1,0 +1,61 @@
+12 CONGRESO INTERNACIONAL DEL ICEA — Sitio y portal de autores
+
+ARCHIVOS
+  index.html              Página principal (diseño original, ahora enlazada al portal)
+  portal.html             Portal: autores, líderes de mesa y comité organizador
+  aviso-privacidad.html   PENDIENTE: pegar el aviso de privacidad oficial de la UAEH
+  assets/config.js        Datos de conexión con Supabase (lo único que hay que editar)
+  assets/portal.css       Estilos del portal
+  assets/js/              Programación del portal
+  supabase/esquema.sql    Base de datos, roles, reglas de acceso y almacenamiento
+
+VER LA DEMOSTRACIÓN (sin configurar nada)
+  Mientras assets/config.js no tenga datos de Supabase, el portal abre en modo
+  demostración con trabajos de ejemplo. La franja amarilla superior permite ver
+  el portal como Autor(a), Líder de mesa o Comité. Nada se guarda.
+  Basta con abrir portal.html con doble clic.
+
+QUÉ PUEDE HACER CADA ROL
+  Autor(a)       Crear cuenta (con confirmación por correo), enviar manuscrito
+                 (PDF/Word), subir comprobante de pago, ver folio, dictamen y
+                 observaciones, subir versión corregida, descargar carta y constancia.
+  Líder de mesa  Ver los trabajos de SU mesa (filtro "Pendientes de revisar"),
+                 descargar manuscritos, registrar dictamen y observaciones,
+                 subir carta de aceptación y constancia (PDF).
+  Comité         Ver todos los trabajos, asignar o cambiar mesa, validar pagos,
+                 crear mesas, asignar el rol de líder y su mesa.
+  Las reglas se aplican en la base de datos, no solo en la pantalla: un autor
+  no puede ver trabajos ajenos y un líder no puede ver los de otra mesa.
+
+PUESTA EN MARCHA (una sola vez)
+  1. Crea una cuenta en https://supabase.com y un proyecto nuevo (plan gratuito).
+  2. En el proyecto: SQL Editor > New query > pega todo supabase/esquema.sql > Run.
+  3. Correo (indispensable): Supabase solo envía correos de confirmación a los
+     miembros de tu equipo hasta que configures un servidor de correo propio.
+     Ve a Authentication > Emails > SMTP Settings y conecta un servicio
+     (Brevo o Resend tienen plan gratuito, o el correo institucional si TI
+     lo permite). Después sube el límite en Authentication > Rate Limits.
+  4. Sube la carpeta completa a tu repositorio de GitHub y activa GitHub Pages.
+  5. En Supabase: Authentication > URL Configuration
+       Site URL:      https://TU-USUARIO.github.io/TU-REPO/portal.html
+       Redirect URLs: https://TU-USUARIO.github.io/TU-REPO/portal.html
+  6. En Supabase: Project Settings > API. Copia "Project URL" y la clave
+     "anon public" en assets/config.js. Sube ese archivo a GitHub.
+     (La clave anon es pública por diseño; NUNCA pongas la clave service_role.)
+  7. Crea tu cuenta en el portal y confírmala. Luego, en SQL Editor, ejecuta:
+       update public.perfiles set rol = 'admin' where correo = 'TU-CORREO';
+  8. Entra al portal: en "Mesas y líderes" crea las mesas. Pide a cada líder
+     que cree su cuenta y asígnale el rol "Líder de mesa" y su mesa.
+
+ANTES DE ABRIR EL REGISTRO
+  - Publicar el aviso de privacidad oficial en aviso-privacidad.html.
+  - Si quieres el portal visible pero sin registro, en assets/config.js pon
+    registroAbierto: false.
+  - El plan gratuito de Supabase pausa el proyecto tras una semana sin uso;
+    durante la convocatoria no ocurre porque hay actividad, pero conviene
+    revisarlo después del congreso.
+
+ARCHIVOS PERMITIDOS
+  Manuscrito: PDF, DOC, DOCX · Comprobante: PDF, JPG, PNG · Carta y constancia: PDF
+  Tamaño máximo: 15 MB por archivo. Todos se guardan en almacenamiento privado;
+  cada descarga usa un enlace temporal de 10 minutos.
