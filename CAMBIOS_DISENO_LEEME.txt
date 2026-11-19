@@ -1,0 +1,9 @@
+REDISEÑO DE LEGIBILIDAD - PROTOTIPO ICEA
+
+1. El selector ROL ACTIVO está destacado en la parte superior de prototipo-directora.html.
+2. El menú lateral y el selector cambian la misma vista.
+3. Se aumentó el tamaño de textos, botones, indicadores y campos.
+4. Se agregaron instrucciones concretas para cada rol.
+5. Los datos son demostrativos. No conectar este prototipo a registros reales.
+6. Para evitar imágenes rotas en GitHub, subir la carpeta assets COMPLETA, conservando mayúsculas, nombres y rutas.
+7. La carpeta supabase NO debe ejecutarse para esta demostración.
